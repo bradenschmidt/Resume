@@ -18,8 +18,8 @@
 %\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 
 % adjust the page margins
-\usepackage[scale=0.75]{geometry}
-%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+\usepackage[scale=0.8]{geometry}
+\setlength{\hintscolumnwidth}{4cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 % personal data
@@ -36,12 +36,6 @@
 \photo[64pt][0.4pt]{profile_pic}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 \quote{Some quote}                                 % optional, remove / comment the line if not wanted
 
-% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
-%\makeatletter
-%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
-%\makeatother
-%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
-
 %----------------------------------------------------------------------------------
 %            content
 %----------------------------------------------------------------------------------
@@ -53,46 +47,46 @@
 \cventry{2010--2015}{Bachelor's of Computer Science}{University of Saskatchewan}{Saskatoon}{\textit{Grade}}{Description}  % arguments 3 to 6 can be left empty
 \cventry{1996--2010}{High School}{Waldheim School}{Waldheim}{\textit{Grade}}{Description}
 
-\section{Master thesis}
-\cvitem{title}{\emph{Title}}
-\cvitem{supervisors}{Supervisors}
-\cvitem{description}{Short thesis abstract}
 
 \section{Experience}
-\subsection{Vocational}
-\cventry{year--year}{Job title}{Employer}{City}{}{General description no longer than 1--2 lines.\newline{}%
-Detailed achievements:%
-\begin{itemize}%
-\item Achievement 1;
-\item Achievement 2, with sub-achievements:
-  \begin{itemize}%
-  \item Sub-achievement (a);
-  \item Sub-achievement (b), with sub-sub-achievements (don't do this!);
-    \begin{itemize}
-    \item Sub-sub-achievement i;
-    \item Sub-sub-achievement ii;
-    \item Sub-sub-achievement iii;
-    \end{itemize}
-  \item Sub-achievement (c);
-  \end{itemize}
-\item Achievement 3.
-\end{itemize}}
-\cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2}
-\subsection{Miscellaneous}
-\cventry{year--year}{Job title}{Employer}{City}{}{Description}
+\subsection{Professional Experience}
+\cventry{2011--Current}{Lumber Yard Clerk}{Saskatoon Coop - 8th Street Home Centre}{Saskatoon}{}
+{
+  Worked Worked in the lumber yard part-time while attending University
+  \newline{}
+  Filled orders, Received stock orders and placed in inventory, Operated fork lift, Assisted customers, Operated the sales till at the lumber check out, Maintained the yard: cleared snow, mowed grass, performed general clean-up
+}
 
-\section{Languages}
+\cventry{May 2014--Aug 2014}{Labourer}{Trepp Construction}{Martensville}{}
+{
+  General Labourer\newline{}
+  Assisted in construction of garages, fences, decks, demolition. ??FCL??
+}
+
+\subsection{Volunteer}
+\cventry{Feb 2014}{Volunteer}{Mennonite Disaster Service}{Far Rockaway, New York}{}{Clean up and construction in homes damaged in Hurricane Sandy.}
+
+
+\section{Programming}
+\subsection{Languages}
 \cvitemwithcomment{Java}{Skill level}{Comment}
 \cvitemwithcomment{Android}{Skill level}{Comment}
 \cvitemwithcomment{SQL}{Skill level}{Comment}
-\cvitemwithcomment{Web}{Skill level}{Comment}
+\cvitemwithcomment{Web}{Skill level}{HTML, CSS, Javascript, PHP}
 \cvitemwithcomment{Python}{Skill level}{Comment}
+\cvitemwithcomment{C}{Skill level}{Comment}
+
+\subsection{Tools, Frameworks, Libraries}
+\cvitemwithcomment{Tools}{Android Studio, Google App Engine}{Comment}
+\cvitemwithcomment{Frameworks}{PHP Slim}{Comment}
+\cvitemwithcomment{Libraries}{Robospice, Retrofit, Butter Knife, Facebook API, ...}{Comment}
 
 
 \section{Computer skills}
 \cvdoubleitem{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
 \cvdoubleitem{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
 \cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+
 
 \section{Interests}
 \cvitem{Computers}{Description}
@@ -101,15 +95,33 @@ Detailed achievements:%
 \cvitem{Automobiles}{Description}
 
 
-\section{Extra 1}
-\cvlistitem{Item 1}
-\cvlistitem{Item 2}
-\cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
+\section{Projects}
+\cvitem{qJournal}{
+  \begin{itemize}
+    \item Developed a journaling app for Android and the Web
+    \item Website was developed in Google App Engine and uses the Google App Engine Datastore for syncing
+notes between Android and the Web
+    \item Developed in Eclipse
+  \end{itemize}
+}
 
-\section{Extra 2}
-\cvlistdoubleitem{Item 1}{Item 4}
-\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
-\cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
+\cvitem{Hockey Database}{
+  \begin{itemize}
+    \item Hockey database used to store schedules, scores, team information, standings, stat leaders, etc.
+    \item Database developed in PostgreSQL and converted to MySQL
+    \item Developed a front end Web Site using HTML, CSS, and PHP for viewing the data and allowing administrative changes (ie. Adding a box score to a game)
+  \end{itemize}
+}
+
+\cvitem{Degree Doctor}{
+  \begin{itemize}
+    \item Android App developed as a group project for a Software Engineering class. Allows a student to plan their degree using an attractive User Interface and
+    \item Developed in Android Studio using several libraries, including: Robospice with Retrofit, Butter Knife, Facebook API, ...
+  \end{itemize}
+}
+\cvitem{NHL Scraper}{}
+\cvitem{Friend Scraper}{}
+
 
 \section{References}
 \begin{cvcolumns}
@@ -145,4 +157,4 @@ Albert Einstein discovered that $e=mc^2$ in 1905.
 \end{document}
 
 
-%% end of file `template.tex'.
+%% end of file `resume .tex'.
