@@ -18,13 +18,14 @@
 %\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 
 % adjust the page margins
-\usepackage[scale=0.8]{geometry}
-\setlength{\hintscolumnwidth}{4cm}                % if you want to change the width of the column with the dates
+\usepackage[scale=0.8, footskip=52pt]{geometry}
+
+\setlength{\hintscolumnwidth}{3.5cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 % personal data
 \name{Braden}{Schmidt}
-\title{Resume title}                               % optional, remove / comment the line if not wanted
+\title{Resume}                               % optional, remove / comment the line if not wanted
 \address{720-140 Meilicke Rd}{S7K 7Y5 Saskatoon}{Saskatchewan}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
 \phone[mobile]{+1~(306)~945~7247}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
 \email{bradenschmidt@gmail.com}                               % optional, remove / comment the line if not wanted
@@ -34,7 +35,7 @@
 \social[github]{bradenschmidt}                              % optional, remove / comment the line if not wanted
 \extrainfo{additional information}                 % optional, remove / comment the line if not wanted
 \photo[64pt][0.4pt]{profile_pic}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
-\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
 
 %----------------------------------------------------------------------------------
 %            content
@@ -42,25 +43,24 @@
 \begin{document}
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
+\vspace*{-1cm} % Shrink space between content and title.
 
 \section{Personal Profile}
 \cvitem{}
 {
   \begin{itemize}
     \item Age 22, Birthdate -- December 13, 1992
-    \item Graduated from high school (2010) with high honours, average of 94 percent
     \item Co-Valedictorian, as chosen by graduating class
     \item Received Canadian Governor General Award for academic excellence in Grade 11 and 12
-    \item Recipient of a Greystone Society Scholarship for a 95% average in Grade 11 and 12
-    \item Will graduate in 2015 with Bachelor of Science -- Computer Science -- Four Year
+    \item Recipient of a Greystone Society Scholarship for a 95\% average in Grade 11 and 12
     \item Hold a valid Saskatchewan Class 5 driver's license
     \item Good work ethic: high morals, dependable, punctual, hard-working, fast learner
   \end{itemize}
 }
 
 \section{Education}
-\cventry{2010--2015}{Bachelor's of Computer Science}{University of Saskatchewan}{Saskatoon}{\textit{Grade}}{Description}  % arguments 3 to 6 can be left empty
-\cventry{1996--2010}{High School}{Waldheim School}{Waldheim}{\textit{Grade}}{Description}
+\cventry{2010--2015}{Bachelor of Science -- Computer Science -- Four Year}{University of Saskatchewan}{Saskatoon}{\textit{Grade}}{Description}  % arguments 3 to 6 can be left empty
+\cventry{1996--2010}{High School}{Waldheim School}{Waldheim}{\textit{Grade}}{High Honours}
 
 
 \section{Experience}
@@ -78,8 +78,8 @@
   Assisted in construction of garages, fences, decks, demolition. ??FCL??
 }
 
-\subsection{Volunteer}
-\cventry{Feb 2014}{Volunteer}{Mennonite Disaster Service}{Far Rockaway, New York}{}{Clean up and construction in homes damaged in Hurricane Sandy.}
+\subsection{Volunteer Experience}
+\cventry{Feb 2014}{Volunteer}{Mennonite Disaster Service}{Far Rockaway, New York}{}{Clean up and construction in homes damaged by Hurricane Sandy.}
 
 
 \section{Programming}
@@ -97,12 +97,6 @@
 \cvitemwithcomment{Libraries}{Robospice, Retrofit, Butter Knife, Facebook API, ...}{Comment}
 
 
-\section{Computer skills}
-\cvdoubleitem{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
-\cvdoubleitem{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
-\cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
-
-
 \section{Interests}
 \cvitem{Computers}{Description}
 \cvitem{Sports}{Description}
@@ -111,12 +105,12 @@
 
 
 \section{Projects}
-\cvitem{qJournal}{
+\cvitem{qJournal}
+{
   \begin{itemize}
-    \item Developed a journaling app for Android and the Web
-    \item Website was developed in Google App Engine and uses the Google App Engine Datastore for syncing
-notes between Android and the Web
-    \item Developed in Eclipse
+    \item Developed a journaling application for Android and the Web.
+    \item Website was developed in Google App Engine and uses the Google App Engine Datastore for syncing notes between Android and the Web.
+    \item Android application developed in Eclipse using Holo design guidelines.
   \end{itemize}
 }
 
@@ -124,26 +118,42 @@ notes between Android and the Web
   \begin{itemize}
     \item Hockey database used to store schedules, scores, team information, standings, stat leaders, etc.
     \item Database developed in PostgreSQL and converted to MySQL
-    \item Developed a front end Web Site using HTML, CSS, and PHP for viewing the data and allowing administrative changes (ie. Adding a box score to a game)
+    \item Developed a front end Web Site using HTML, CSS, and PHP for viewing the data and allowing administrative changes (ie. Adding a box score to a game).
   \end{itemize}
 }
 
-\cvitem{Degree Doctor}{
+\cvitem{Degree Doctor}
+{
   \begin{itemize}
-    \item Android App developed as a group project for a Software Engineering class. Allows a student to plan their degree using an attractive User Interface and
-    \item Developed in Android Studio using several libraries, including: Robospice with Retrofit, Butter Knife, Facebook API, ...
+    \item Android application developed as a group project for a Software Engineering class. Allows a student to plan their degree using an attractive user interface by browsing classes, selecting classes, and scheduling classes.
+    \item Developed in Android Studio using several libraries, including: Robospice with Retrofit, Butter Knife, Facebook API.
   \end{itemize}
 }
-\cvitem{NHL Scraper}{}
-\cvitem{Friend Scraper}{}
+\cvitem{NHL Stat Scraper}
+{
+  \begin{itemize}
+    \item Python script designed to collect NHL player statistics by scraping several different pages of NHL.com.
+    \item Uses the Python module BeautifulSoup4.
+  \end{itemize}
+}
+\cvitem{Facebook Friend Scraper}
+{
+  \begin{itemize}
+    \item Python script designed to collect Facebook friends and relationships by using a recursive, depth-first search scrape of Facebook friend pages.
+    \item Uses the Python modules: BeautifulSoup4, Mecahnize, and NetworkX.
+  \end{itemize}
+}
 
 
 \section{References}
-\begin{cvcolumns}
-  \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
-  \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
-  \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
-\end{cvcolumns}
+\cvitem{Randy Boehm}
+{
+  \begin{itemize}
+    \item Saskatoon Coop - 8th St Home Centre
+    \item 2010 8th Street East, Saskatoon, SK
+    \item (P) - 306 933-3817
+  \end{itemize}
+}
 
 
 \clearpage
