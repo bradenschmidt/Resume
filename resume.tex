@@ -19,6 +19,7 @@
 
 % adjust the page margins
 \usepackage[scale=0.8, footskip=52pt]{geometry}
+\usepackage{ragged2e}
 
 \setlength{\hintscolumnwidth}{3.5cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
@@ -35,7 +36,7 @@
 \social[github]{bradenschmidt}                              % optional, remove / comment the line if not wanted
 %\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
 \photo[64pt][0.4pt]{profile_pic}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
-\quote{Motivated, hardworking graduate of the College of Computer Science with strong programming and problem solving skills. Possesses the ability to learn new skills quickly to meet any challenge. Capacity to work effectively within a team setting or on independent tasks. Maintains the aspiration and ability to lead others. Strong desire to learn and be challenged and looking for the opportunity to further develop skills within an exceptional organization. Looking to continue working as a dependable and punctual employee.}                                 % optional, remove / comment the line if not wanted
+\quote{\justify Motivated, hardworking graduate of the College of Computer Science with strong programming and problem solving skills. Possesses the ability to learn new skills quickly to meet any challenge. Capacity to work effectively within a team setting or on independent tasks. Maintains the aspiration and ability to lead others. Strong desire to learn and be challenged and looking for the opportunity to further develop skills within an exceptional organization. Looking to continue working as a dependable and contributing employee. \endgraf}                                 % optional, remove / comment the line if not wanted
 
 %----------------------------------------------------------------------------------
 %            content
@@ -58,13 +59,13 @@
 }
 
 \section{Education}
-\cventry{2010--2015}{Bachelor of Science - Computer Science - Four Year}{University of Saskatchewan}{Saskatoon}{}{77\% Degree Average}  % arguments 3 to 6 can be left empty
+\cventry{2010--2015}{Bachelor of Science - Computer Science - Four Year}{University of Saskatchewan}{Saskatoon}{}{80\% in Years 4 and 5}  % arguments 3 to 6 can be left empty
 \cventry{1996--2010}{High School Diploma}{Waldheim School}{Waldheim}{}{95\% Average -- High Honours}
 
 
 \section{Experience}
 \subsection{Professional Experience}
-\cventry{2011--Current}{Lumber Yard Sales Associate}{Saskatoon Coop - 8th Street Home Centre}{Saskatoon, SK}{}
+\cventry{2011--Current}{Lumber Yard Sales Associate}{8th Street Co-op Home Centre}{Saskatoon, SK}{}
 {
   Worked in the lumber yard part-time while attending University.
   \newline{}
@@ -86,12 +87,43 @@
 
 
 \section{Projects}
+\subsection{University Courses}
 \cvitem{qJournal}
 {
   \begin{itemize}
-    \item Developed a journaling application for Android and the Web.
+    \item Independently developed a synced journaling application for Android and the Web.
     \item Website was developed in Google App Engine and uses the Google App Engine Datastore for syncing notes between Android and the Web.
     \item Android application developed in Eclipse using Holo design guidelines.
+    \item Received mark of 80\%.
+  \end{itemize}
+}
+
+\cvitem{Degree Doctor}
+{
+  \begin{itemize}
+    \item Android application developed as a Group Project for a Software Engineering class. Allows a student to plan their degree using an attractive user interface by browsing classes, selecting classes, and scheduling classes.
+    \item Developed in Android Studio using several libraries, including: Robospice with Retrofit, Butter Knife, Facebook API.
+    \item Group Project team leader.
+    \item Received mark of 95\%.
+  \end{itemize}
+}
+
+\cvitem{Facebook Friend Scraper}
+{
+  \begin{itemize}
+    \item Python script designed to collect Facebook friends and relationships by using a recursive, depth-first search scrape of Facebook friend pages.
+    \item Uses the Python modules: BeautifulSoup4, Mecahanize, and NetworkX.
+    \item Independently developed module of a Group Project.
+    \item Received mark of 96\%.
+  \end{itemize}
+}
+
+\subsection{Hobby}
+\cvitem{NHL Stat Scraper}
+{
+  \begin{itemize}
+    \item Python script designed to collect NHL player statistics by scraping several different pages of NHL.com.
+    \item Uses the Python module BeautifulSoup4.
   \end{itemize}
 }
 
@@ -100,28 +132,6 @@
     \item Hockey database used to store schedules, scores, team information, standings, stat leaders, etc.
     \item Database developed in PostgreSQL and converted to MySQL
     \item Developed a front end Web Site using HTML, CSS, and PHP for viewing the data and allowing administrative changes (ie. Adding a box score to a game).
-  \end{itemize}
-}
-
-\cvitem{Degree Doctor}
-{
-  \begin{itemize}
-    \item Android application developed as a group project for a Software Engineering class. Allows a student to plan their degree using an attractive user interface by browsing classes, selecting classes, and scheduling classes.
-    \item Developed in Android Studio using several libraries, including: Robospice with Retrofit, Butter Knife, Facebook API.
-  \end{itemize}
-}
-\cvitem{NHL Stat Scraper}
-{
-  \begin{itemize}
-    \item Python script designed to collect NHL player statistics by scraping several different pages of NHL.com.
-    \item Uses the Python module BeautifulSoup4.
-  \end{itemize}
-}
-\cvitem{Facebook Friend Scraper}
-{
-  \begin{itemize}
-    \item Python script designed to collect Facebook friends and relationships by using a recursive, depth-first search scrape of Facebook friend pages.
-    \item Uses the Python modules: BeautifulSoup4, Mecahnize, and NetworkX.
   \end{itemize}
 }
 
@@ -161,7 +171,7 @@
     \item Pastor and Volunteer Team Leader
     \item Waldheim Mennonite Brethren Church
     \item Waldheim, SK
-    \item (P) - 306 000-0000
+    \item (P) - 306 945-7245
   \end{itemize}
 }
 
