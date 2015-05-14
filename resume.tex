@@ -35,8 +35,15 @@
 %\social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
 \social[github]{bradenschmidt}                              % optional, remove / comment the line if not wanted
 %\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
-\photo[64pt][0.4pt]{profile_pic}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
-\quote{\justify Motivated, hardworking graduate of the College of Computer Science with strong programming and problem solving skills. Possesses the ability to learn new skills quickly to meet any challenge. Capacity to work effectively within a team setting or on independent tasks. Maintains the aspiration and ability to lead others. Strong desire to learn and be challenged and looking for the opportunity to further develop skills within an exceptional organization. Looking to continue working as a dependable and contributing employee. \endgraf}                                 % optional, remove / comment the line if not wanted
+\photo[64pt][0.4pt]{profile_pic2}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\quote{\raggedright\addtolength{\leftskip}{3.9em}Motivated, hardworking graduate of the Department of Computer Science with strong programming and problem solving skills. Possesses the ability to learn new skills quickly to meet any challenge. Capacity to work effectively within a team setting or on independent tasks. Maintains the aspiration and ability to lead others. Strong desire to learn and be challenged and looking for the opportunity to further develop skills within an exceptional organization. Looking to continue working as a dependable and contributing employee.\endgraf}                                 % optional, remove / comment the line if not wanted
+
+\usepackage{etoolbox}
+\patchcmd{\recomputecvlengths}{%
+    \setlength{\quotewidth}{0.65\textwidth}%
+  }{%
+    \setlength{\quotewidth}{0.75\textwidth}%
+}{}{}
 
 %----------------------------------------------------------------------------------
 %            content
@@ -58,32 +65,10 @@
   \end{itemize}
 }
 
+
 \section{Education}
 \cventry{2010--2015}{Bachelor of Science - Computer Science - Four Year}{University of Saskatchewan}{Saskatoon}{}{80\% in Years 4 and 5}  % arguments 3 to 6 can be left empty
 \cventry{1996--2010}{High School Diploma}{Waldheim School}{Waldheim}{}{95\% Average -- High Honours}
-
-
-\section{Experience}
-\subsection{Professional Experience}
-\cventry{2011--Current}{Lumber Yard Sales Associate}{8th Street Co-op Home Centre}{Saskatoon, SK}{}
-{
-  Worked in the lumber yard part-time while attending University.
-  \newline{}
-  Filled orders, Received stock orders and placed into inventory, Operated fork lift, Assisted customers, Operated sales till at the lumber check out, Helped train new employees, Maintained  lumber yard.
-  \newline{}
-  Maintained Saskatchewan Forklift Certification.
-}
-
-\cventry{May 2014--Aug 2014}{Labourer}{Trepp Construction}{Martensville, SK}{}
-{
-  General Labourer\newline{}
-  Assisted in construction of garages, fences, decks, demolition.
-  \newline{}
-  Assisted in renovation of Federated Co-operatives Limited Building.
-}
-
-\subsection{Volunteer Experience}
-\cventry{Feb 2014}{Volunteer}{Mennonite Disaster Service}{Far Rockaway, New York}{}{Clean up and construction in homes damaged by Hurricane Sandy.}
 
 
 \section{Projects}
@@ -92,8 +77,7 @@
 {
   \begin{itemize}
     \item Independently developed a synced journaling application for Android and the Web.
-    \item Website was developed in Google App Engine and uses the Google App Engine Datastore for syncing notes between Android and the Web.
-    \item Android application developed in Eclipse using Holo design guidelines.
+    \item Website developed in Google App Engine and uses the Google App Engine Datastore for syncing notes between Android and the Web. Android application developed in Eclipse using Holo design guidelines.
     \item Received mark of 80\%.
   \end{itemize}
 }
@@ -101,9 +85,8 @@
 \cvitem{Degree Doctor}
 {
   \begin{itemize}
-    \item Android application developed as a Group Project for a Software Engineering class. Allows a student to plan their degree using an attractive user interface by browsing classes, selecting classes, and scheduling classes.
+    \item Android application developed as a Group Project for a Software Engineering class. Allows a student to plan their degree using an attractive user interface by browsing classes, selecting classes, and scheduling classes. Took role as group project team leader.
     \item Developed in Android Studio using several libraries, including: Robospice with Retrofit, Butter Knife, Facebook API.
-    \item Group Project team leader.
     \item Received mark of 95\%.
   \end{itemize}
 }
@@ -111,13 +94,14 @@
 \cvitem{Facebook Friend Scraper}
 {
   \begin{itemize}
-    \item Python script designed to collect Facebook friends and relationships by using a recursive, depth-first search scrape of Facebook friend pages.
+    \item Independently developed Python script designed to collect Facebook friends and relationships by using a recursive, depth-first search scrape of Facebook friend pages.
     \item Uses the Python modules: BeautifulSoup4, Mecahanize, and NetworkX.
-    \item Independently developed module of a Group Project.
     \item Received mark of 96\%.
   \end{itemize}
 }
 
+
+\vspace*{-0.5cm} % Shrink space
 \subsection{Hobby}
 \cvitem{NHL Stat Scraper}
 {
@@ -134,15 +118,31 @@
     \item Developed a front end Web Site using HTML, CSS, and PHP for viewing the data and allowing administrative changes (ie. Adding a box score to a game).
   \end{itemize}
 }
+% END OF PROJECT SECTION
 
+\vspace*{-0.5cm} % Shrink space
 \section{Programming}
 \subsection{Languages \& Development Tools}
 \cvitemwithcomment{Languages}{Java, Android, SQL, Web (HTML, PHP, Javscript), C, Python}{}
-\cvitemwithcomment{Tools}{Android Studio, Google App Engine}{}
-\cvitemwithcomment{Frameworks}{PHP Slim}{}
-\cvitemwithcomment{Libraries}{Robospice, Retrofit, Butter Knife, Facebook API}{}
+\cvitemwithcomment{Tools}{Android Studio, Google App Engine, Git}{}
+\cvitemwithcomment{Libraries/Frameworks}{Robospice, Retrofit, Butter Knife, Facebook API, PHP Slim}{}
 
+\section{Experience}
+\subsection{Professional Experience}
+\cventry{2011--Current}{Lumber Yard Sales Associate}{8th Street Co-op Home Centre}{Saskatoon, SK}{}
+{
+  Worked in the lumber yard part-time while attending University.
+  \newline{}
+  Filled orders, Received stock orders and placed into inventory, Operated fork lift, Assisted customers, Operated sales till at the lumber check out, Helped train new employees, Maintained  lumber yard. Maintained Saskatchewan Forklift Certification.
+}
 
+\cventry{May 2014--Aug 2014}{Labourer}{Trepp Construction}{Martensville, SK}{}
+{
+  General labourer assisting in construction of garages, fences, decks, demolition. Assisted in renovation of Federated Co-operatives Limited Building.
+}
+
+\subsection{Volunteer Experience}
+\cventry{Feb 2014}{Volunteer}{Mennonite Disaster Service}{Far Rockaway, New York}{}{Clean up and construction in homes damaged by Hurricane Sandy.}
 
 \section{References}
 \cvitem{Randy Boehm}
