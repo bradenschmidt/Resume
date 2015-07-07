@@ -27,7 +27,7 @@
 % personal data
 \name{Braden}{Schmidt}
 \title{Resume}                               % optional, remove / comment the line if not wanted
-\address{720-140 Meilicke Rd}{S7K 7Y5 Saskatoon}{Saskatchewan}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\address{720-140 Meilicke Rd}{S7K 7Y5}{Saskatoon, Saskatchewan}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
 \phone[mobile]{+1~(306)~945~7247}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
 \email{bradenschmidt@gmail.com}                               % optional, remove / comment the line if not wanted
 %\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
@@ -36,7 +36,7 @@
 \social[github]{bradenschmidt}                              % optional, remove / comment the line if not wanted
 %\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
 \photo[64pt][0.4pt]{profile_pic2}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
-\quote{\raggedright\addtolength{\leftskip}{3.9em}Motivated, hardworking graduate of the Department of Computer Science with strong programming and problem solving skills. Possesses the ability to learn new skills quickly to meet any challenge. Capacity to work effectively within a team setting or on independent tasks. Maintains the aspiration and ability to lead others. Strong desire to learn and be challenged and looking for the opportunity to further develop skills within an exceptional organization. Looking to continue working as a dependable and contributing employee.\endgraf}                                 % optional, remove / comment the line if not wanted
+\quote{\raggedright\addtolength{\leftskip}{3.9em}Motivated, hardworking graduate of the Department of Computer Science with strong programming and problem solving skills. Possesses the ability to learn new skills quickly to meet any challenge. Capacity to work effectively in a team setting or on independent tasks. Maintains the aspiration and ability to lead others. Strong desire to learn and be challenged and looking for the opportunity to further develop skills for an exceptional organization.\endgraf}                                 % optional, remove / comment the line if not wanted
 
 \usepackage{etoolbox}
 \patchcmd{\recomputecvlengths}{%
@@ -45,11 +45,48 @@
     \setlength{\quotewidth}{0.75\textwidth}%
 }{}{}
 
+\makeatletter
+\renewcommand*{\makeletterclosing}{
+  \@closing\\[2em]%
+  {\bfseries\@firstname~\@lastname}%
+  \ifthenelse{\isundefined{\@enclosure}}{}{%
+    \\%
+    \vfil%
+    {\color{color2}\itshape\enclname: \@enclosure}}%
+    \vfil}
+\makeatother
+
 %----------------------------------------------------------------------------------
 %            content
 %----------------------------------------------------------------------------------
 \begin{document}
+
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{Federated Co-operatives Hiring Management}{Federated Co-operatives Limited (FCL)\\Box 1050, Saskatoon, SK S7K 3M9\\401 - 22nd Street East, Saskatoon SK, S7K 0H2}
+\date{July 7, 2015}
+\opening{Dear Hiring Manager,}
+\closing{Yours sincerely,}
+\enclosure[Attached]{Resume}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+
+I am writing to apply for the posted position of Java/Web Administrator (1 year term) (Saskatoon, Wholesale), which has been posted on coopconnection.ca. I have enclosed my resume for your perusal.
+
+I recently graduated with distinction from the University of Saskatchewan with a degree in Computer Science. During these years of study, I developed a passion for web development, database management, and API development, among other things.
+
+I have experience in development with Java, through University course work, Android development, and Java Servlets. I enjoy working with business relations and providing tools for consumers or businesses. I have worked for Saskatoon Coop and have used CRS services in the past. I have also worked in the Federated Coop building in downtown Saskatoon doing building renovations.
+
+I am particularly adept at creating ideas, then planning and organizing the methods needed to deliver effective results. I have demonstrated this in my independent work as well as group work where I often assumed the position of group leader.
+
+I am a conscientious, disciplined person who works hard and pays attention to detail. I am flexible, quick to pick up new skills, and eager to learn. I am keen to work for a company that I can contribute to and share my enthusiasm for modern development. I have excellent references and would be happy to discuss any possible vacancies with you at your convenience.
+
+If you do not have an opening for me at this time, I would appreciate if you would keep my resume on file for any future possibilities.
+
+\makeletterclosing
+
+
 %-----       resume       ---------------------------------------------------------
+\clearpage
 \makecvtitle
 \vspace*{-1cm} % Shrink space between content and title.
 
@@ -68,7 +105,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Education}
-\cventry{2010--2015}{Bachelor of Science - Computer Science - Four Year - with Distinction}{University of Saskatchewan}{Saskatoon}{}{78\% Overall Average -- with Distinction}  % arguments 3 to 6 can be left empty
+\cventry{2010--2015}{Bachelor of Science - Computer Science - Four Year - with Distinction}{\newline University of Saskatchewan}{Saskatoon}{}{78\% Overall Average -- with Distinction}  % arguments 3 to 6 can be left empty
 \cventry{1996--2010}{High School Diploma}{Waldheim School}{Waldheim}{}{95\% Average -- High Honours}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -93,15 +130,6 @@
   \end{itemize}
 }
 
-\cvitem{Facebook Friend Scraper}
-{
-  \begin{itemize}
-    \item Independently developed Python script designed to collect Facebook friends and relationships by using a recursive, depth-first search scrape of Facebook friend pages.
-    \item Uses the Python modules: BeautifulSoup4, Mecahanize, and NetworkX.
-    \item Received mark of 96\%.
-  \end{itemize}
-}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \vspace*{-0.5cm} % Shrink space
@@ -116,19 +144,10 @@
   \end{itemize}
 }
 
-\cvitem{NHL Stat Scraper}
-{
-  \begin{itemize}
-    \item Python script designed to collect NHL player statistics by scraping several different pages of NHL.com.
-    \item Uses the Python module BeautifulSoup4.
-  \end{itemize}
-}
-
 \cvitem{Hockey Database}{
   \begin{itemize}
     \item Hockey database used to store schedules, scores, team information, standings, stat leaders, etc.
-    \item Database developed in PostgreSQL and converted to MySQL
-    \item Developed a front end Web Site using HTML, CSS, and PHP for viewing the data and allowing administrative changes (ie. Adding a box score to a game).
+    \item Database developed in PostgreSQL and converted to MySQL with a front end Web Site built using HTML, CSS, and PHP for viewing the data and allowing administrative changes.
   \end{itemize}
 }
 %%%%%%%%%%%%% END OF PROJECT SECTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -136,8 +155,8 @@
 \vspace*{-0.5cm} % Shrink space
 \section{Programming}
 \subsection{Languages \& Development Tools}
-\cvitem{Languages}{Java, Android, SQL, Web (HTML, PHP, Javscript), C, Python}{}
-\cvitem{Tools}{Android Studio, Google App Engine, Git}{}
+\cvitem{Languages}{Java, Android, SQL, Web (HTML, PHP, Javscript), C, Python, JSON, XML, LaTeX}{}
+\cvitem{Tools}{Android Studio, Google App Engine, Git, Jenkins}{}
 \cvitem{Libraries/Frameworks}{Robospice, Retrofit, ButterKnife, Facebook API, Google Plus API, Picasso, PHP Slim}{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -192,31 +211,6 @@
     \item (P) - 306 945-7245
   \end{itemize}
 }
-
-
-\clearpage
-%-----       letter       ---------------------------------------------------------
-% recipient data
-\recipient{Federated Co-operatives Hiring Management}{Federated Co-operatives Limited (FCL)\\Box 1050, Saskatoon, SK S7K 3M9\\401 - 22nd Street East, Saskatoon SK, S7K 0H2}
-\date{July 6, 2015}
-\opening{Dear Hiring Manager,}
-\closing{Yours sincerely,}
-\enclosure[Attached]{Resume}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
-\makelettertitle
-
-I am writing to apply for the posted position of Java/Web Administrator (1 year term) (Saskatoon, Wholesale), which has been posted on coopconnection.ca. I have enclosed my resume for your perusal.
-
-I have experience with developing for Java, through University course work, Android development, and Java Servlets. I enjoy working with business relations and providing tools for consumers or businesses. I have worked for Saskatoon Coop and have used CRS services in the past. I have also worked in the Federated Coop building in downtown Saskatoon doing building renovations.
-
-I recently graduated with distinction from the University of Saskatchewan with a degree in Computer Science. During these years of study, I developed a passion for web development, database management, and API development, among other things.
-
-I'm particularly adept at creating ideas, then planning and organizing the methods needed to deliver effective results. I have shown this independently and as part of a group and often assumed the role of team leader.
-
-I am a conscientious, disciplined person who works hard and pays attention to detail. I'm flexible, quick to pick up new skills, and eager to learn. I'm keen to work for a company that I can contribute to and share my enthusiasm for //progressive development//. I have excellent references and would be happy to discuss any possible vacancies with you at your convenience.
-
-If you do not have any openings at this time, I would appreciate if you would keep my resume on file for any future possibilities.
-
-\makeletterclosing
 
 %\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
 \end{document}
