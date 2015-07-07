@@ -1,0 +1,67 @@
+Call to get person to direct letter to.
+
+I am writing in response to your advertisement in The Star Phoenix, Jan 15, 2015.
+
+GENERAL
+
+I am writing to //inquire if// you have any vacancies in your company. I have enclosed my resume for your perusal.
+
+COMPANY INFO PARAGRAPH
+
+I recently graduated with distinction from the University of Saskatchewan with a degree in Computer Science. During these years of study, I developed a passion for app design, web development, database management, and API development, among other things.
+
+I'm particularly adept at creating ideas, then planning and organizing the methods needed to deliver effective results. I have shown this independently and as part of a group and often assumed the role of team leader.
+
+I am a conscientious, disciplined person who works hard and pays attention to detail. I'm flexible, quick to pick up new skills, and eager to learn. I'm keen to work for a company that I can contribute to and share my enthusiasm for //progressive development//. I have excellent references and would be happy to discuss any possible vacancies with you at your convenience.
+
+If you do not have any openings at this time, I would appreciate if you would keep my resume on file for any future possibilities.
+
+
+
+Vendasta
+
+I am writing to inquire about your Experienced Software Developer career posted on vendasta.com. I have enclosed my resume for your perusal.
+
+I attended a class in which your //CEO, XY ZSS, gave a talk about how your company operates with regards to their Software Development methods. He spoke about your adoption of an Agile Development style which intrigued me. His talk showed your great company culture, one where each employee matters and are not just one of the group. This specific University course (Software Engineering) was a great help in discovering the right career path for me, as I enjoyed our use of Agile development to create software.
+
+I recently graduated with distinction from the University of Saskatchewan with a degree in Computer Science. During these years of study, I developed a passion for app design, web development, database management, and API development, among other things. Your company was started using Google App Engine as its basis. During a University course on Cloud Computing I built an Android App with an accompanying website and API, with the website and API built using Google App Engine for Java. I found Google App Engine to be an awesome and powerful tool. I am in the process of developing another project with an Android App and a website but this time using Google App Engine for Python with Flask. This has further shown the power of Google App Engine as well as Python.
+
+I'm particularly adept at creating ideas, then planning and organizing the methods needed to deliver effective results. I have shown this independently and as part of a group and often assumed the role of team leader.
+
+I am a conscientious, disciplined person who works hard and pays attention to detail. I'm flexible, quick to pick up new skills, and eager to learn. I'm keen to work for a company that I can contribute to and share my enthusiasm for //progressive development//. I have excellent references and would be happy to discuss any possible vacancies with you at your convenience.
+
+If you do not have any openings at this time, I would appreciate if you would keep my resume on file for any future possibilities.
+
+
+
+
+Noodlecake
+
+I am writing to //inquire if// you have any vacancies in your company. I have enclosed my resume for your perusal.
+
+I attended a class in which your //CEO, XY ZSS, gave a talk about how your company operates, what you do, and how you work. Your discussion caught my interest, especially the App development and your move to more of the publishing side of Apps. I have a strong interest in App development and the business side of App management. ///
+
+I recently graduated with distinction from the University of Saskatchewan with a degree in Computer Science. During these years of study, I developed a passion for app design, web development, database management, and API development, among other things.
+
+I'm particularly adept at creating ideas, then planning and organizing the methods needed to deliver effective results. I have shown this independently and as part of a group and often assumed the role of team leader.
+
+I am a conscientious, disciplined person who works hard and pays attention to detail. I'm flexible, quick to pick up new skills, and eager to learn. I'm keen to work for a company that I can contribute to and share my enthusiasm for //progressive development//. I have excellent references and would be happy to discuss any possible vacancies with you at your convenience.
+
+If you do not have any openings at this time, I would appreciate if you would keep my resume on file for any future possibilities.
+
+
+
+Federated Coop
+Position: Java Developer
+
+I am writing to apply for the posted position of Java/Web Administrator (1 year term) (Saskatoon, Wholesale), which has been posted on coopconnection.ca. I have enclosed my resume for your perusal.
+
+I have experience with developing for Java, through University course work, Android development, and Java Servlets. I enjoy working with business relations and providing tools for consumers or businesses. I have worked for Saskatoon Coop and have used CRS services in the past. I have also worked in the Federated Coop building in downtown Saskatoon doing building renovations.
+
+I recently graduated with distinction from the University of Saskatchewan with a degree in Computer Science. During these years of study, I developed a passion for web development, database management, and API development, among other things.
+
+I'm particularly adept at creating ideas, then planning and organizing the methods needed to deliver effective results. I have shown this independently and as part of a group and often assumed the role of team leader.
+
+I am a conscientious, disciplined person who works hard and pays attention to detail. I'm flexible, quick to pick up new skills, and eager to learn. I'm keen to work for a company that I can contribute to and share my enthusiasm for //progressive development//. I have excellent references and would be happy to discuss any possible vacancies with you at your convenience.
+
+If you do not have any openings at this time, I would appreciate if you would keep my resume on file for any future possibilities.
